@@ -4,9 +4,13 @@ To extract key information from a PDF for an investor evaluating a company, we n
 
 📌 Key Steps
 1️⃣ Extract text from PDF using PyMuPDF (fitz)
+
 2️⃣ Identify key sections (e.g., "Growth Prospects", "Revenue Forecast")
+
 3️⃣ Extract financial figures (using regex for $ amounts and % values)
+
 4️⃣ Summarize key sections (using TextBlob NLP)
+
 5️⃣ Print insights for investors
 
 
@@ -45,3 +49,12 @@ Numbers, percentages, and financial terms
 Present extracted insights in structured formats such as:
 JSON, table, or plain text for easy readability.
 
+🚀 Installation
+
+1️⃣ Install Dependencies
+pip install fitz PyMuPDF spacy nltk textblob
+python -m spacy download en_core_web_sm
+python -m textblob.download_corpora
+
+2️⃣ Run the Script
+python pdf_analysis.py

@@ -13,17 +13,21 @@ To extract key information from a PDF for an investor evaluating a company, we n
 The algorithm first applies **Natural Language Processing (NLP)** techniques to identify key sections of a financial report, such as future growth prospects, business changes, and financial triggers. It then extracts and summarizes essential points using **keyword-based filtering**, **Named Entity Recognition (NER)**, and **AI-driven summarization** to ensure concise yet informative insights. Finally, the extracted data is structured in an **investor-friendly format**, making it easier to evaluate the company's potential, key changes, and factors that may influence earnings and growth.
 
 🛠 Algorithm Steps
+
 1️⃣ Load PDF and Extract Text
 Use PyMuPDF (fitz) or pdfplumber to extract raw text from the document.
+
 2️⃣ Preprocess the Text
 Remove whitespace, headers, and footers for clean analysis.
 Tokenize the text into sentences and words using NLP techniques.
+
 3️⃣ Identify Key Sections
 Use Regex & NLP to detect headings like:
 ✅ Growth Prospects
 ✅ Financial Triggers
 ✅ Business Risks & Changes
 Extract relevant content under each section.
+
 4️⃣ Perform NLP-Based Summarization
 Apply TF-IDF, BERT, or GPT-based models for text summarization.
 Focus on extracting insights related to:
@@ -31,10 +35,12 @@ Revenue growth & projections
 Market trends & competition
 Regulatory changes & risks
 Key factors affecting future earnings
+
 5️⃣ Financial Data Extraction
 Use Regex & NLP to detect:
 Revenue, profit, expenses, and forecasts
 Numbers, percentages, and financial terms
+
 6️⃣ Output Structured Insights
 Present extracted insights in structured formats such as:
 JSON, table, or plain text for easy readability.

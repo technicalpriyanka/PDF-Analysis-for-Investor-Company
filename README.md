@@ -3,6 +3,7 @@ Investor looks at key elements such as future growth prospects, key changes in t
 To extract key information from a PDF for an investor evaluating a company, we need an algorithm that:
 
 📌 Key Steps
+
 1️⃣ Extract text from PDF using PyMuPDF (fitz)
 
 2️⃣ Identify key sections (e.g., "Growth Prospects", "Revenue Forecast")
@@ -52,9 +53,28 @@ JSON, table, or plain text for easy readability.
 🚀 Installation
 
 1️⃣ Install Dependencies
+
 pip install fitz PyMuPDF spacy nltk textblob
 python -m spacy download en_core_web_sm
 python -m textblob.download_corpora
 
 2️⃣ Run the Script
+
 python pdf_analysis.py
+
+📌 Example Output
+
+=== Financial Figures Extracted ===
+['$120,000,000', '15%', '22%', '5%']
+
+=== Key Investment Insights ===
+
+[GROWTH PROSPECTS]
+- ABC Tech Ltd. expects a 15% revenue growth.
+- Expanding market presence in Europe and Asia.
+
+[KEY TRIGGERS]
+- AI-driven analytics tool expected to boost revenue by 20%.
+
+[BUSINESS RISKS]
+- Regulatory changes in data privacy laws may increase costs.
